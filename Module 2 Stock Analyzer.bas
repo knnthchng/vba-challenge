@@ -54,16 +54,18 @@ For i = 2 To LastRow
     Else
         totalVol = (totalVol + (Cells(i, 7).Value))
     End If
+Next i
 ' Apply conditional formatting
+For i = 2 To LastRow
     If Cells(i, 11).Value > 0 Then
-        Cells(i, 10).Interior.ColorIndex = 4
         Cells(i, 11).Interior.ColorIndex = 4
+        Cells(i, 12).Interior.ColorIndex = 4
     ElseIf Cells(i, 11).Value < 0 Then
-        Cells(i, 10).Interior.ColorIndex = 3
         Cells(i, 11).Interior.ColorIndex = 3
+        Cells(i, 12).Interior.ColorIndex = 3
     Else
-        Cells(i, 10).Interior.ColorIndex = 0
         Cells(i, 11).Interior.ColorIndex = 0
+        Cells(i, 12).Interior.ColorIndex = 0
     End If
 Next i
 
