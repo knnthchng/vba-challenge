@@ -7,6 +7,7 @@ For Each ws In Worksheets
 Next ws
 
 End Sub
+' -----------------------------------------------------
 Sub StockAnalyzer()
 
 ' Define all variables
