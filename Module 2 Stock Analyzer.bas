@@ -54,7 +54,6 @@ For i = 2 To LastRow
         totalVol = (totalVol + (Cells(i, 7).Value))
     End If
 ' Apply conditional formatting
-    If IsEmpty(Cells(i, 11).Value) Then Exit For
     If Cells(i, 11).Value > 0 Then
         Cells(i, 10).Interior.ColorIndex = 4
         Cells(i, 11).Interior.ColorIndex = 4
